@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="2026-05-05 長榮百合國小陳世聰校長實驗教育研習筆記，含 Salimpo 阿美山海文化實驗小學在地應用設計">
+<title>實驗教育研習筆記｜陳世聰校長 5/5 分享 + Salimpo 在地應用</title>
+<style>
+:root {
+  --navy: #0e2c4a;
+  --navy-light: #1a4570;
+  --ocean: #2c5f8d;
+  --orange: #e87a3d;
+  --orange-light: #f4a06d;
+  --cream: #faf6ef;
+  --warm-white: #fefcf8;
+  --gray-text: #4a5568;
+  --gray-light: #e2e8f0;
+  --red-accent: #c53030;
+  --green-accent: #2f855a;
+  --shadow: 0 4px 12px rgba(14, 44, 74, 0.08);
+  --shadow-strong: 0 8px 24px rgba(14, 44, 74, 0.15);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+
+body {
+  font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--gray-text);
+  background: var(--warm-white);
+  word-wrap: break-word;
+}
+
+/* === Sticky Top Nav === */
+.topnav {
+  position: sticky;
+  top: 0;
+  background: rgba(14, 44, 74, 0.97);
+  backdrop-filter: blur(8px);
+  color: white;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.topnav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.topnav-title { font-weight: 600; font-size: 15px; }
+.topnav-title small { opacity: 0.7; font-weight: 400; margin-left: 8px; }
+.topnav-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.topnav-links a {
+  color: white; text-decoration: none; font-size: 14px;
+  opacity: 0.85; transition: opacity 0.2s;
+}
+.topnav-links a:hover { opacity: 1; border-bottom: 2px solid var(--orange); }
+
+/* === Hero === */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--ocean) 100%);
+  color: white;
+  padding: 80px 24px 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle at 30% 20%, rgba(232, 122, 61, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 70% 70%, rgba(255,255,255,0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-inner { max-width: 800px; margin: 0 auto; position: relative; }
+.hero-eyebrow {
+  display: inline-block;
+  background: rgba(232, 122, 61, 0.2);
+  color: var(--orange-light);
+  padding: 6px 16px; border-radius: 20px;
+  font-size: 13px; font-weight: 600; letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 700; line-height: 1.3;
+  margin-bottom: 16px;
+}
+.hero h1 .accent { color: var(--orange-light); }
+.hero-sub {
+  font-size: clamp(16px, 2.4vw, 19px);
+  opacity: 0.85; margin-bottom: 30px;
+  font-weight: 300;
+}
+.hero-meta {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;
+  font-size: 14px; opacity: 0.75;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 24px; margin-top: 30px;
+}
+.hero-meta span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* === TLDR === */
+.tldr-section {
+  background: var(--cream);
+  padding: 60px 24px;
+}
+.tldr-card {
+  max-width: 760px; margin: 0 auto;
+  background: white;
+  border-left: 6px solid var(--orange);
+  padding: 36px 40px;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+.tldr-label {
+  display: inline-block;
+  background: var(--orange);
+  color: white;
+  padding: 4px 14px; border-radius: 14px;
+  font-size: 12px; font-weight: 600; letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.tldr-card h2 {
+  color: var(--navy);
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.tldr-card p {
+  font-size: 17px; line-height: 1.85;
+  color: var(--navy);
+}
+
+/* === Section base === */
+section.content {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 70px 24px 30px;
+}
+section.content.alt { background: var(--cream); max-width: 100%; }
+section.content.alt > .inner { max-width: 920px; margin: 0 auto; }
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 12px; font-weight: 700; letter-spacing: 2px;
+  color: var(--orange);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+h2.section-title {
+  color: var(--navy);
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+h2.section-title::after {
+  content: '';
+  display: block;
+  width: 50px; height: 4px;
+  background: var(--orange);
+  margin-top: 14px; margin-bottom: 30px;
+}
+.section-intro {
+  font-size: 17px; line-height: 1.8;
+  margin-bottom: 30px;
+  color: var(--gray-text);
+}
+h3.subsection {
+  color: var(--navy);
+  font-size: 22px; font-weight: 600;
+  margin: 40px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--gray-light);
+  display: flex; align-items: center; gap: 10px;
+}
+h3.subsection .num {
+  display: inline-flex;
+  width: 32px; height: 32px;
+  background: var(--orange);
+  color: white;
+  border-radius: 50%;
+  font-size: 15px; font-weight: 700;
+  align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+h4.h4 {
+  color: var(--ocean);
+  font-size: 18px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+
+/* === Quote / Callout === */
+blockquote.principal-quote {
+  background: linear-gradient(to right, rgba(232, 122, 61, 0.08), transparent);
+  border-left: 4px solid var(--orange);
+  padding: 18px 22px;
+  margin: 20px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+blockquote.principal-quote::before {
+  content: '陳校長：';
+  display: block;
+  font-weight: 700;
+  color: var(--orange);
+  font-size: 13px;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+blockquote.lakaw-quote {
+  background: linear-gradient(to right, rgba(44, 95, 141, 0.08), transparent);
+  border-left: 4px solid var(--ocean);
+  padding: 18px 22px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+blockquote.lakaw-quote::before {
+  content: 'Lakaw singsi（Mipacing 老師）：';
+  display: block;
+  font-weight: 700;
+  color: var(--ocean);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.callout {
+  background: white;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--ocean);
+}
+.callout.warning { border-top-color: var(--red-accent); background: #fff8f8; }
+.callout.tip { border-top-color: var(--green-accent); background: #f8fdfa; }
+.callout-title {
+  font-weight: 700; font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+.callout.warning .callout-title { color: var(--red-accent); }
+.callout.tip .callout-title { color: var(--green-accent); }
+
+/* === Table === */
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 14.5px;
+}
+th {
+  background: var(--navy);
+  color: white;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--gray-light);
+  vertical-align: top;
+  line-height: 1.6;
+}
+tr:nth-child(even) td { background: rgba(14, 44, 74, 0.02); }
+tr:hover td { background: rgba(232, 122, 61, 0.05); }
+td strong { color: var(--navy); }
+.table-caption {
+  font-size: 13px; color: var(--gray-text);
+  margin-top: -16px; margin-bottom: 24px;
+  font-style: italic;
+}
+
+/* === Image === */
+figure.slide {
+  margin: 24px auto;
+  max-width: 100%;
+}
+figure.slide img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow-strong);
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+figure.slide img:hover { transform: scale(1.01); }
+figure.slide figcaption {
+  font-size: 13px;
+  color: var(--gray-text);
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* === Concept Diagram (CSS-only) === */
+.rational-flower {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 30px 0;
+}
+.rational-petal {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 12px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--ocean);
+  transition: transform 0.2s;
+}
+.rational-petal:hover { transform: translateY(-3px); }
+.rational-petal.tinl { border-top-color: var(--orange); background: linear-gradient(180deg, rgba(232,122,61,0.05), white); }
+.petal-letter {
+  font-size: 22px; font-weight: 800;
+  color: var(--ocean);
+  display: block; margin-bottom: 4px;
+}
+.rational-petal.tinl .petal-letter { color: var(--orange); }
+.petal-name { font-size: 16px; font-weight: 600; color: var(--navy); }
+.petal-verb { font-size: 13px; color: var(--gray-text); margin-top: 4px; }
+.petal-tag {
+  display: inline-block;
+  font-size: 10px;
+  background: rgba(232,122,61,0.15);
+  color: var(--orange);
+  padding: 2px 8px; border-radius: 8px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* Three-stage rubric diagram */
+.rubric-3stage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+.rubric-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  border-bottom: 4px solid var(--ocean);
+}
+.rubric-card.middle { border-bottom-color: var(--orange); }
+.rubric-card.last { border-bottom-color: var(--red-accent); }
+.rubric-stage-num {
+  display: inline-block;
+  background: var(--ocean);
+  color: white;
+  width: 28px; height: 28px; line-height: 28px;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.rubric-card.middle .rubric-stage-num { background: var(--orange); }
+.rubric-card.last .rubric-stage-num { background: var(--red-accent); }
+.rubric-stage-name { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+.rubric-stage-target { font-size: 13px; color: var(--gray-text); margin-bottom: 12px; }
+.rubric-stage-options {
+  font-size: 14px; color: var(--navy);
+  background: rgba(14,44,74,0.04);
+  padding: 8px 12px; border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Reading 4-pillar */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+.pillar {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--ocean);
+}
+.pillar-icon { font-size: 24px; margin-bottom: 6px; }
+.pillar-name { font-weight: 700; color: var(--navy); margin-bottom: 4px; font-size: 16px; }
+.pillar-by { font-size: 13px; color: var(--gray-text); }
+
+/* Salimpo grade-value-image cards */
+.grade-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 30px 0;
+}
+.grade-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow);
+  border-top: 6px solid var(--ocean);
+}
+.grade-card.mid { border-top-color: var(--orange); }
+.grade-card.high { border-top-color: var(--red-accent); }
+.grade-num {
+  font-size: 12px; font-weight: 700;
+  color: var(--ocean);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.grade-card.mid .grade-num { color: var(--orange); }
+.grade-card.high .grade-num { color: var(--red-accent); }
+.grade-name {
+  font-size: 22px; font-weight: 700;
+  color: var(--navy);
+  margin: 4px 0 18px;
+}
+.grade-row {
+  margin: 14px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--gray-light);
+}
+.grade-row:last-child { border-bottom: none; }
+.grade-label { font-size: 12px; color: var(--gray-text); margin-bottom: 4px; font-weight: 600; }
+.grade-value { font-size: 15px; color: var(--navy); font-weight: 600; }
+.grade-amis { font-size: 12px; color: var(--orange); font-style: italic; }
+
+/* LINE share box */
+.line-share {
+  background: #06c755;
+  background: linear-gradient(135deg, #06c755 0%, #04a847 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 28px;
+  margin: 24px 0;
+  position: relative;
+}
+.line-share-header {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.line-icon {
+  background: white; color: #06c755;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 16px;
+}
+.line-share-title { font-size: 16px; font-weight: 700; }
+.line-content {
+  background: rgba(255,255,255,0.97);
+  color: var(--gray-text);
+  padding: 18px 20px;
+  border-radius: 8px;
+  font-size: 14.5px; line-height: 1.85;
+  white-space: pre-wrap;
+  font-family: -apple-system, "PingFang TC", monospace;
+}
+.copy-btn {
+  position: absolute;
+  top: 24px; right: 24px;
+  background: white; color: #06c755;
+  border: none; padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.copy-btn:hover { transform: scale(1.05); }
+.copy-btn:active { transform: scale(0.95); }
+
+/* Action items */
+.action-list {
+  background: white;
+  padding: 24px 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin: 20px 0;
+  list-style: none;
+}
+.action-list li {
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--gray-light);
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.action-list li:last-child { border-bottom: none; }
+.action-list li::before {
+  content: counter(list-item);
+  display: inline-flex;
+  width: 28px; height: 28px;
+  background: var(--orange);
+  color: white;
+  border-radius: 50%;
+  font-size: 13px; font-weight: 700;
+  align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.action-list { counter-reset: list-item; }
+
+/* Footer */
+.footer {
+  background: var(--navy);
+  color: white;
+  padding: 50px 24px 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+.footer-inner { max-width: 720px; margin: 0 auto; }
+.footer h3 { color: var(--orange-light); margin-bottom: 12px; font-size: 18px; }
+.footer p { opacity: 0.8; font-size: 14px; line-height: 1.8; }
+.footer-credits {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 13px; opacity: 0.6;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 200;
+  cursor: zoom-out;
+  align-items: center; justify-content: center;
+  padding: 30px;
+}
+.lightbox.active { display: flex; }
+.lightbox img {
+  max-width: 100%; max-height: 100%;
+  border-radius: 4px;
+}
+.lightbox-close {
+  position: absolute; top: 20px; right: 26px;
+  color: white; font-size: 30px; font-weight: 300;
+  cursor: pointer; line-height: 1;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .topnav-links { display: none; }
+  .hero { padding: 50px 20px 60px; }
+  .tldr-card { padding: 24px 22px; }
+  section.content { padding: 50px 18px 20px; }
+  .rational-flower { grid-template-columns: repeat(2, 1fr); }
+  .rubric-3stage { grid-template-columns: 1fr; }
+  .pillar-grid { grid-template-columns: 1fr; }
+  .grade-card-grid { grid-template-columns: 1fr; }
+  th, td { padding: 10px 10px; font-size: 13px; }
+  .copy-btn { position: static; margin-bottom: 12px; }
+}
+
+@media print {
+  .topnav { display: none; }
+  .hero { color: var(--navy); background: white; }
+  .lightbox, .copy-btn { display: none !important; }
+  figure.slide img { box-shadow: none; max-width: 80%; margin: 0 auto; }
+  body { font-size: 12pt; }
+}
+</style>
+</head>
+<body>
+
+<!-- ======= TOP NAV ======= -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <div class="topnav-title">📘 實驗教育研習筆記 <small>2026-05-05</small></div>
+    <div class="topnav-links">
+      <a href="#chen-1">理念</a>
+      <a href="#chen-2">課程</a>
+      <a href="#chen-3">評量</a>
+      <a href="#chen-4">檔案</a>
+      <a href="#salimpo">Salimpo 應用</a>
+      <a href="#share">LINE 分享</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======= HERO ======= -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">實驗教育群組會議</span>
+    <h1>從<span class="accent">「教而後知困」</span>到<br>實驗教育的四層串接</h1>
+    <p class="hero-sub">長榮百合國小陳世聰校長 5/5 分享筆記<br>＋ Salimpo 阿美山海文化實驗小學在地應用設計</p>
+    <div class="hero-meta">
+      <span>📅 2026-05-05</span>
+      <span>👤 陳世聰校長（屏東長榮百合）</span>
+      <span>🏫 藍網/大南/武陵/土坂/南王</span>
+      <span>📊 13 張投影片整理</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 理念層 ======= -->
+<section id="chen-1" class="content">
+  <span class="section-eyebrow">第一層 · IDEA</span>
+  <h2 class="section-title">理念層｜願景 vs 使命的釐清</h2>
+  <p class="section-intro">陳校長指出：實驗教育學校必須依照「<strong>特定教育理念</strong>」（哲學×價值×目的×人性觀×課程觀×學習觀×社會觀，7 大引導性作為）。願景應屬「學校」，不需獨立「課程願景」。學生圖像必須具體可觀察，不能只寫「四力」。</p>
+
+  <h3 class="subsection"><span class="num">1</span>南王案例：學校願景與學生圖像表</h3>
+  <figure class="slide">
+    <img src="images/02-nanwang-vision.jpg" alt="南王國小學校課程願景與學生圖像表" loading="lazy">
+    <figcaption>圖｜南王國小現行的學校／課程願景表，陳校長現場給予建議：「課程願景」應升為學校願景，學生圖像需具體到「實踐幾次代表有此力」</figcaption>
+  </figure>
+
+  <blockquote class="principal-quote">願景應該定位在學校，學校的願景就好了，不需要針對課程獨立願景。你課程有願景，那教學要不要願景？評等要不要願景？</blockquote>
+
+  <h3 class="subsection"><span class="num">2</span>學生圖像具體化的證據（長榮百合）</h3>
+  <p>長榮百合用「八對轉變」呈現實驗教育的學生圖像具體成效：</p>
+  <figure class="slide">
+    <img src="images/10-mind-body-quality.jpg" alt="長榮百合身心素質提升八象限" loading="lazy">
+    <figcaption>圖｜長榮百合「身心素質提升」八象限：依賴退縮→希望信任、任性衝動→意志自立 等八對轉變，並附學歷檢測 PR 98-99 的量化證據</figcaption>
+  </figure>
+</section>
+
+<!-- ======= 課程層 ======= -->
+<section id="chen-2" class="content alt">
+  <div class="inner">
+    <span class="section-eyebrow">第二層 · CURRICULUM</span>
+    <h2 class="section-title">課程層｜Rational 八階段教學取徑</h2>
+    <p class="section-intro">這是長榮百合的核心創見：以 Webb DOK（4 階段）為基礎，加入 4 個原鄉特別需要的階段，形成 8 階段教學取徑——融合 5 大學理基礎（Banks 多元文化／Vygotsky 文化觀／Bloom 認知／Webb 深度／Beane 整體概念）。</p>
+
+    <h3 class="subsection"><span class="num">1</span>Rational 八階段曼陀羅</h3>
+    <figure class="slide">
+      <img src="images/06-rational-mandala.jpg" alt="Rational 教學取徑曼陀羅圖與五大理論基礎" loading="lazy">
+      <figcaption>圖｜Rational 教學取徑曼陀羅：8 階段交織，下方標示 Banks／Vygotsky／Bloom／Webb／Beane 五大理論基礎</figcaption>
+    </figure>
+
+    <p>用 CSS 重繪概念圖更清晰：藍色 4 階段引自 Webb DOK，橘色 4 階段（拓展／請益／重整／分享）為長榮百合校本創見（TINL）。</p>
+
+    <div class="rational-flower">
+      <div class="rational-petal"><span class="petal-letter">R</span><div class="petal-name">記憶</div><div class="petal-verb">陳述</div></div>
+      <div class="rational-petal"><span class="petal-letter">A</span><div class="petal-name">理解</div><div class="petal-verb">說明</div></div>
+      <div class="rational-petal tinl"><span class="petal-letter">T</span><div class="petal-name">拓展</div><div class="petal-verb">查詢</div><span class="petal-tag">原鄉特有</span></div>
+      <div class="rational-petal tinl"><span class="petal-letter">I</span><div class="petal-name">請益</div><div class="petal-verb">詢問</div><span class="petal-tag">情感療癒</span></div>
+      <div class="rational-petal"><span class="petal-letter">O</span><div class="petal-name">思辨</div><div class="petal-verb">比較</div></div>
+      <div class="rational-petal tinl"><span class="petal-letter">N</span><div class="petal-name">重整</div><div class="petal-verb">歸納</div><span class="petal-tag">情意目標</span></div>
+      <div class="rational-petal"><span class="petal-letter">A</span><div class="petal-name">實踐</div><div class="petal-verb">表現</div></div>
+      <div class="rational-petal tinl"><span class="petal-letter">L</span><div class="petal-name">分享</div><div class="petal-verb">執行</div><span class="petal-tag">口語訓練</span></div>
+    </div>
+
+    <h3 class="subsection"><span class="num">2</span>整體課程架構：四大環境（部落→Rinari→都會→國際）</h3>
+    <figure class="slide">
+      <img src="images/05-cr-overall-arch.jpg" alt="長榮百合整體課程架構，6 年級主題螺旋遞進於四大環境" loading="lazy">
+      <figcaption>圖｜長榮百合「整體課程架構」：6 年級主題（藝起樂舞→quma→原民文學→建築智慧→狩獵文化→祭儀禮俗），透過 Rational 八階段，在「部落→Rinari→都會→國際」四大環境中螺旋遞進</figcaption>
+    </figure>
+
+    <h3 class="subsection"><span class="num">3</span>校本閱讀四項度（缺一不可）</h3>
+    <figure class="slide">
+      <img src="images/09-reading-arch.jpg" alt="長榮百合整體課程必以閱讀支撐架構" loading="lazy">
+      <figcaption>圖｜「整體課程必以閱讀支撐」——四大類閱讀彼此支撐，缺一不可</figcaption>
+    </figure>
+
+    <div class="pillar-grid">
+      <div class="pillar"><div class="pillar-icon">📖</div><div class="pillar-name">識字量分級讀本</div><div class="pillar-by">學校統一推動</div></div>
+      <div class="pillar"><div class="pillar-icon">📚</div><div class="pillar-name">領域延伸閱讀</div><div class="pillar-by">科任老師主導</div></div>
+      <div class="pillar"><div class="pillar-icon">🌟</div><div class="pillar-name">班級本位品格閱讀</div><div class="pillar-by">導師教育理想</div></div>
+      <div class="pillar"><div class="pillar-icon">🎋</div><div class="pillar-name">部落學歷補充閱讀</div><div class="pillar-by">文化老師主導</div></div>
+    </div>
+
+    <blockquote class="principal-quote">認真的老師基本上在開學前就會準備的很充分——這位最優秀的二年級導師會先借一些書成為班級共同可以選擇的讀本。一分耕耘一分收穫。</blockquote>
+  </div>
+</section>
+
+<!-- ======= 評量層 ======= -->
+<section id="chen-3" class="content">
+  <span class="section-eyebrow">第三層 · ASSESSMENT</span>
+  <h2 class="section-title">評量層｜指標 vs 標準的釐清</h2>
+  <p class="section-intro">這是這場研習最有價值的觀念釐清。陳校長強調：<strong>評量指標 (criteria)</strong> 是努力方向，<strong>評量標準 (standard)</strong> 是達到多少分／% 才算到位。不分清楚，走著走著就會迷失方向。</p>
+
+  <h3 class="subsection"><span class="num">1</span>Rational 評量規準表（八向度）</h3>
+  <figure class="slide">
+    <img src="images/07-rational-rubric.jpg" alt="長榮百合 RATIONAL 評量規準表" loading="lazy">
+    <figcaption>圖｜屏東縣瑪家鄉長榮百合國小 RATIONAL 評量規準表：8 向度 × 表現水平 × 表現動詞</figcaption>
+  </figure>
+
+  <h4 class="h4">⭐ 三段式設計巧思</h4>
+  <p>陳校長設計時刻意把評量水平分成三段，呼應認知層次的躍遷——前段是「會不會做」、實踐是「熟不熟練」、分享是「想不想透」。</p>
+
+  <div class="rubric-3stage">
+    <div class="rubric-card">
+      <span class="rubric-stage-num">1</span>
+      <div class="rubric-stage-name">前 6 階段</div>
+      <div class="rubric-stage-target">記憶／理解／拓展／請益／思辨／重整<br>看「會不會做」</div>
+      <div class="rubric-stage-options">頻率：總是 / 經常 / 極少</div>
+    </div>
+    <div class="rubric-card middle">
+      <span class="rubric-stage-num">2</span>
+      <div class="rubric-stage-name">第 7 階段：實踐</div>
+      <div class="rubric-stage-target">A 實踐<br>看「熟不熟練」</div>
+      <div class="rubric-stage-options">速度：迅速 / 斷斷續續 / 緩慢</div>
+    </div>
+    <div class="rubric-card last">
+      <span class="rubric-stage-num">3</span>
+      <div class="rubric-stage-name">第 8 階段：分享</div>
+      <div class="rubric-stage-target">L 分享<br>看「想不想透」</div>
+      <div class="rubric-stage-options">深度：深刻 / 粗淺 / 表面</div>
+    </div>
+  </div>
+
+  <h3 class="subsection"><span class="num">2</span>文化研究課程檢核表（5×6×4 範本）</h3>
+  <p>這張表回答了武陵田主任的問題：「文化課程要如何做評量？」</p>
+  <figure class="slide">
+    <img src="images/14-yuwei-checklist2.jpg" alt="二年級郁惟文化研究課程檢核表" loading="lazy">
+    <figcaption>圖｜二年級郁惟「文化研究課程檢核表」：5 大評量項目 × 6 評量向度 × 4 等級（表現優異／穩定達成／基本達成／起步學習）+ 教師觀察紀錄 + 家長回饋與簽名</figcaption>
+  </figure>
+
+  <h3 class="subsection"><span class="num">3</span>歌謠／筆記檢核（給文化老師參考）</h3>
+  <figure class="slide">
+    <img src="images/13-yuwei-checklist1.jpg" alt="二年級郁惟田間歌謠學習檢核與課程筆記檢核" loading="lazy">
+    <figcaption>圖｜二年級郁惟「田間歌謠學習檢核」（5 項學習指標）＋「課程筆記檢核」（5 項記錄能力），均含教師觀察紀錄與家長回饋</figcaption>
+  </figure>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 多元評量的本質</div>
+    陳校長：「不必到那麼的精準，可是至少至少你有針對你的學習模組去做相關的評量。<strong>整體性觀察迴饋＋自我至自我的進步比較</strong>，就是多元評量的精髓——你不會問畫畫比賽委員『為何這張比較好？』那都是同整性的判斷。」
+  </div>
+</section>
+
+<!-- ======= 檔案層 ======= -->
+<section id="chen-4" class="content alt">
+  <div class="inner">
+    <span class="section-eyebrow">第四層 · PORTFOLIO</span>
+    <h2 class="section-title">檔案層｜學習檔案的本質</h2>
+
+    <figure class="slide">
+      <img src="images/12-portfolio-slide.jpg" alt="陳校長學習檔案投影片" loading="lazy">
+      <figcaption>圖｜陳校長關於「學習檔案」的核心三句話：鷹架幫助學習・在鷹架中實踐與精進亦是評量・亦驅亦進</figcaption>
+    </figure>
+
+    <blockquote class="principal-quote">學習檔案是學生學習歷程的重要經歷，成就學校的願景與目標，也落實教學者的教育理念與目標。<strong>與其問如何製作檔案，無如反問你要把孩子帶往何處？</strong></blockquote>
+
+    <h3 class="subsection"><span class="num">1</span>檔案必備元素</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>元素</th><th>為什麼一定要做</th></tr></thead>
+        <tbody>
+          <tr><td><strong>書背</strong></td><td>「沒有書背等於錯誤的學習引導——你連書的元素都沒有告訴讓孩子了解。」</td></tr>
+          <tr><td><strong>封面孩子自己寫</strong></td><td>二年級就可以寫，到高年級應更獨立</td></tr>
+          <tr><td><strong>個人檔案</strong></td><td>姓名、班級、本學期參加活動與得獎紀錄</td></tr>
+          <tr><td><strong>學習目錄／分類索引</strong></td><td>讓檔案有結構</td></tr>
+          <tr><td><strong>老師教學理念圖像</strong></td><td>第一頁就要呈現導師教學理想</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subsection"><span class="num">2</span>從歌謠切入：跨族符號溝通</h3>
+    <figure class="slide">
+      <img src="images/11-from-songs.jpg" alt="從歌謠切入為例的心智圖" loading="lazy">
+      <figcaption>圖｜陳校長現場舉例：從一首傳統歌謠可以切入「詞義介紹→當時意境→時空脈絡→深層價值」，達到「跨域跨族的符號溝通」——比學會歌詞更深</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ======= SALIMPO 應用 ======= -->
+<section id="salimpo" class="content">
+  <span class="section-eyebrow">在地應用 · SALIMPO</span>
+  <h2 class="section-title">把陳校長的方法套到 Salimpo 山海課程</h2>
+  <p class="section-intro">作為 Salimpo 阿美山海文化實驗小學的成員，我把研習所學直接設計成兩份在地化文件：① Mipacing 海祭課程套用 Rational 八階段（12 週版）② Salimpo 三維表（年級 × 部落價值 × 階段圖像），仿長榮百合圖 6 但用阿美族價值。</p>
+
+  <h3 class="subsection"><span class="num">1</span>Salimpo 既有曼陀羅課程架構</h3>
+  <figure class="slide">
+    <img src="images/salimpo-mandala-total.jpg" alt="Salimpo 阿美山海文化實驗小學課程曼陀羅總覽" loading="lazy">
+    <figcaption>圖｜Salimpo 阿美山海文化實驗小學現有課程曼陀羅：5 環同心圓設計（學校核心 → 12 課程單元 → 4 大主軸 → 8 大主題 → 季節輪盤）</figcaption>
+  </figure>
+
+  <h3 class="subsection"><span class="num">2</span>任務 1：Mipacing 海祭課程 × Rational 八階段</h3>
+  <p>把 Rational 八階段套到 Mipacing（海祭・漁獵）課程，1/3/5 年級分階段操作 + 12 週週次對應。每階段都引用 Lakaw singsi 20260306 逐字稿原話佐證教學內容。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>週次</th><th>階段</th><th>1 年級</th><th>3 年級</th><th>5 年級</th></tr></thead>
+      <tbody>
+        <tr><td>W1</td><td><strong>R 記憶</strong>（陳述）</td><td>唱海祭歌謠童謠版</td><td>記住 5 種潮間帶生物族語名</td><td>記住 Misacepo' 海祭流程 7 階段</td></tr>
+        <tr><td>W2</td><td><strong>A 理解</strong>（說明）</td><td>說明「海是什麼」</td><td>說明傳統 vs 現代漁法差異</td><td>說明 Mifetik 入海儀式的文化意涵</td></tr>
+        <tr><td>W3-4</td><td><strong>T 拓展</strong>（查詢）</td><td>查詢家中阿公阿嬤吃過的海產</td><td>查詢學校圖書館海洋繪本</td><td>查詢南島語族漁獵儀式比較</td></tr>
+        <tr><td>W5-6</td><td><strong>I 請益</strong>（詢問）</td><td>訪問家人「最早的海邊記憶」</td><td>訪問部落耆老「以前怎麼補魚」</td><td>訪問 Lakaw 老師「為何傳統女性不下海」</td></tr>
+        <tr><td>W7</td><td><strong>O 思辨</strong>（比較）</td><td>比較魚 vs 章魚</td><td>比較毒藤漁法與汙染議題</td><td>比較「禁忌＝迷信」vs「禁忌＝安全提醒」</td></tr>
+        <tr><td>W8-9</td><td><strong>N 重整</strong>（歸納）</td><td>歸納「海邊好玩／危險的事」</td><td>歸納「友善海洋 5 個行動」</td><td>歸納「文化傳承與性別界線」立場文章</td></tr>
+        <tr><td>W10-11</td><td><strong>A 實踐</strong>（表現）</td><td>下海撿貝殼／看潮間帶</td><td>編結漁網 Alofo'</td><td>參與部落 Misacepo' 海祭觀察</td></tr>
+        <tr><td>W12</td><td><strong>L 分享</strong>（執行）</td><td>班級小發表「我的海邊」</td><td>校內市集擺攤介紹潮間帶</td><td>校外社群／部落會議報告海祭觀察</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <blockquote class="lakaw-quote">我們只允許給自己一個小時打魚的時間。允許自己一個小時，有潛伴跟裝備都很安全的狀態下，我們要求就是一個小時。<strong>不多有就好，沒有也沒關係。</strong>（→ W8-9 教學重點：節制＝阿美族海洋永續觀）</blockquote>
+
+  <blockquote class="lakaw-quote">老人家講的禁忌就是這樣子……禁忌都是提醒，告訴你說你要很小心。（→ W7 思辨教學：禁忌的科學本質）</blockquote>
+
+  <div class="callout warning">
+    <div class="callout-title">⚠️ 風險提醒</div>
+    <ul style="margin-left: 20px; line-height: 1.85;">
+      <li><strong>性別議題敏感</strong>：Lakaw 老師是少見的女性魚獵者。建議 5 年級才深入此議題。</li>
+      <li><strong>入海安全</strong>：實踐階段必須有耆老／教練在場，遵守「一小時原則」。低中年級限於潮間帶。</li>
+      <li><strong>儀式參與分寸</strong>：Misacepo' 海祭有性別分工。讓孩子當「觀察員」而非「參與者」。</li>
+    </ul>
+  </div>
+
+  <h3 class="subsection"><span class="num">3</span>任務 2：Salimpo 三維表（年級 × 部落價值 × 階段圖像）</h3>
+  <p>仿長榮百合圖 6 設計，但以阿美族價值與族語重新建構。對應 Salimpo 115 學年度 1/3/5 年級三主題（山海生活／人文／藝術）的 docx 範本。</p>
+
+  <div class="grade-card-grid">
+    <div class="grade-card">
+      <div class="grade-num">LOWER · 低年段</div>
+      <div class="grade-name">1 年級</div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（生活）</div>
+        <div class="grade-value">Kapah 互助</div>
+        <div class="grade-amis">Mihiraw（觀察）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（人文）</div>
+        <div class="grade-value">Tina 親情</div>
+        <div class="grade-amis">Mafana'（認得）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（藝術）</div>
+        <div class="grade-value">'Olah 喜悅</div>
+        <div class="grade-amis">Misakero（玩耍）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">階段圖像</div>
+        <div class="grade-value">Wawa no kaheteng</div>
+        <div class="grade-amis">部落小娃兒</div>
+      </div>
+    </div>
+    <div class="grade-card mid">
+      <div class="grade-num">MID · 中年段</div>
+      <div class="grade-name">3 年級</div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（生活）</div>
+        <div class="grade-value">Mipaliw 換工</div>
+        <div class="grade-amis">Midateng（採集）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（人文）</div>
+        <div class="grade-value">Lisin 守序</div>
+        <div class="grade-amis">Mitilid（記錄）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（藝術）</div>
+        <div class="grade-value">Tominun 細心</div>
+        <div class="grade-amis">Mitolik（編織）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">階段圖像</div>
+        <div class="grade-value">Mihilamay a wawa</div>
+        <div class="grade-amis">會幫忙的孩子</div>
+      </div>
+    </div>
+    <div class="grade-card high">
+      <div class="grade-num">HIGH · 高年段</div>
+      <div class="grade-name">5 年級</div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（生活）</div>
+        <div class="grade-value">Mifetik 敬畏</div>
+        <div class="grade-amis">Pacafay（守護）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（人文）</div>
+        <div class="grade-value">Selal 階序</div>
+        <div class="grade-amis">Misanga'（探究）</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">部落價值（藝術）</div>
+        <div class="grade-value">Sowal no fina'cadan</div>
+        <div class="grade-amis">用我的話說我的文化</div>
+      </div>
+      <div class="grade-row">
+        <div class="grade-label">階段圖像</div>
+        <div class="grade-value">Mato'asayay</div>
+        <div class="grade-amis">學長姐／領袖</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 跟長榮百合（卑南族）的差異</div>
+    長榮百合 6 年級用「和諧友愛 / 勤勞分享 / 尊重守序 / 合作謙卑 / 感恩勇敢 / 自主共好」六大卑南族價值。Salimpo 不直接借用，而從阿美族主題清單萃取「互助 Mipaliw / 親情 Tina / 守序 Lisin / 細心 Tominun / 敬畏 Mifetik / 傳承 Sowal no fina'cadan」六大阿美族價值。
+  </div>
+</section>
+
+<!-- ======= LINE 分享 ======= -->
+<section id="share" class="content alt">
+  <div class="inner">
+    <span class="section-eyebrow">分享 · SHARE</span>
+    <h2 class="section-title">LINE 跨校群組分享版</h2>
+    <p class="section-intro">下方四則訊息每則 < 500 字，手機 LINE 顯示完整不需展開。點擊「複製」按鈕一鍵帶到剪貼簿。</p>
+
+    <div class="line-share">
+      <button class="copy-btn" onclick="copyText(this, 'msg1')">📋 複製</button>
+      <div class="line-share-header">
+        <span class="line-icon">L</span>
+        <span class="line-share-title">第 1 則：開場 + 1 句話結論</span>
+      </div>
+      <div class="line-content" id="msg1">【實驗教育研習筆記｜長榮百合陳世聰校長 5/5 分享】
+
+Hi 各位夥伴 👋
+
+5/5 下午跟大家一起聽完陳世聰校長的分享，我整理了 5 個最有用的觀念，分四則訊息傳給大家。
+
+🎯 一句話總結：
+實驗教育的核心是「理念→課程→評量→檔案」四層串接。重點不在做花俏的成果，而在能否說清「孩子要往哪裡走、走到哪算到位」。
+
+下面四則訊息會講：
+1️⃣ 願景與使命要分清楚
+2️⃣ 評量指標 vs 評量標準
+3️⃣ Rational 八階段教學取徑
+4️⃣ 校本閱讀四項度 + 學習檔案範例
+
+每則約 1 分鐘讀完 ⏱</div>
+    </div>
+
+    <div class="line-share">
+      <button class="copy-btn" onclick="copyText(this, 'msg2')">📋 複製</button>
+      <div class="line-share-header">
+        <span class="line-icon">L</span>
+        <span class="line-share-title">第 2 則：觀念 1-2</span>
+      </div>
+      <div class="line-content" id="msg2">🔑 觀念 1：願景與使命要分清楚
+
+陳校長指出：學校只需要一個「學校願景」，不需要再獨立寫「課程願景」「教學願景」「評量願景」。
+
+🧒 學生圖像必須具體到「實踐幾次代表有此力」——光寫「文化力、品格力、學習力、數位力」太空，評鑒委員會問。
+
+🔑 觀念 2：評量指標 vs 評量標準
+
+⭐ 這是這場研習最重要的概念釐清
+
+📊 評量指標 (criteria) = 努力方向
+例如「研究生能學量化研究方法」
+
+📏 評量標準 (standard) = 達到多少分／% 才算到位
+例如「鑒定時達 70 分」
+
+陳校長：「不分清楚，走著走著就會迷失方向。」</div>
+    </div>
+
+    <div class="line-share">
+      <button class="copy-btn" onclick="copyText(this, 'msg3')">📋 複製</button>
+      <div class="line-share-header">
+        <span class="line-icon">L</span>
+        <span class="line-share-title">第 3 則：觀念 3 Rational 八階段</span>
+      </div>
+      <div class="line-content" id="msg3">🔑 觀念 3：Rational 教學取徑（長榮百合的 8 階段）
+
+長榮把 Webb DOK 4 階段加上 4 個原鄉特別需要的階段，共 8 階段：
+
+📚 R 記憶（陳述）
+💡 A 理解（說明）
+🔍 T 拓展（查詢）— 拓展學習基地
+🙋 I 請益（詢問）— 向耆老請益，有療癒功能 ⭐ 偏鄉特有
+⚖️ O 思辨（比較）
+📝 N 重整（歸納）— 情意目標需要重新整合 ⭐
+🎬 A 實踐（表現）
+🎤 L 分享（執行）
+
+評量規準三段式設計：
+🔸 前 6 階段用「頻率」（總是／經常／極少）
+🔸 實踐用「速度」（迅速／斷斷續續／緩慢）
+🔸 分享用「深度」（深刻／粗淺／表面）
+
+💡 對 Salimpo 的啟發：
+我已經把 Rational 八階段套到 Mipacing 海祭課程，1/3/5 年級分階段操作 + 12 週週次對應，文件在群組共享資料夾。</div>
+    </div>
+
+    <div class="line-share">
+      <button class="copy-btn" onclick="copyText(this, 'msg4')">📋 複製</button>
+      <div class="line-share-header">
+        <span class="line-icon">L</span>
+        <span class="line-share-title">第 4 則：觀念 4 + 學習檔案 + 5/19 提醒</span>
+      </div>
+      <div class="line-content" id="msg4">🔑 觀念 4：校本閱讀四項度
+
+📖 識字量分級讀本（學校統一）
+📚 領域延伸閱讀（科任老師）
+🌟 班級本位品格閱讀（導師教育理想）
+🎋 部落學歷補充閱讀（文化老師）
+
+陳校長：「認真的導師寒暑假就要先借書、先準備跨域課程。」
+
+📂 學習檔案範例（長榮百合二年級郁惟）
+✅ 封面孩子自己寫
+✅ 書背一定要做（很多學校漏掉）
+✅ 文化研究課程檢核表（5 類 × 6 向度 × 4 等級）
+✅ 校本閱讀四類分檔
+✅ 家長回饋與簽名
+
+📅 5/19 第二次會議
+談實質課程審查。可以先檢視自家校訂課程的法定時間有沒有「幽靈人口」問題（時間配不上、同聲表沒呈現）。
+
+🎁 延伸資源
+🌱 6 月底張榮發基金會將分送綠能繪本到 1000 所偏鄉學校（每校 2 本）
+🤝 長榮百合那位最優秀的二年級導師願意被「校長出賣」跨校交流
+
+下次見 👋</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 後續行動 ======= -->
+<section id="actions" class="content">
+  <span class="section-eyebrow">後續行動 · ACTION</span>
+  <h2 class="section-title">5/19 第二次會議前要做的事</h2>
+
+  <ul class="action-list">
+    <li>把 Rational 八階段套用文件印出來，請 Lakaw singsi 與余主任確認族語與部落價值的選用是否合適</li>
+    <li>把 Salimpo 三維表合併到 115 A 表的「課程目標」欄位下方</li>
+    <li>5/19 第二次會議申請陳校長「最優秀導師」案例完整檔案影本</li>
+    <li>6 月底張榮發基金會記者會 → 申請綠能繪本 2 本到校</li>
+    <li>把這份筆記分享到 Salimpo 跨校群組（南王／武陵／土坂／大南等夥伴）</li>
+    <li>下學期初把「階段圖像」做成班級海報（每班自己年級那一格放大），讓孩子看得到自己的成長目標</li>
+  </ul>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <h3>致謝</h3>
+    <p>感謝 <strong>陳世聰校長</strong>（屏東長榮百合國小）2026-05-05 的無私分享，將實驗教育的「四層串接」與 Rational 八階段教學取徑開放給全國原住民實驗教育群組。</p>
+    <p>感謝 <strong>Lakaw singsi</strong>（Mipacing 漁獵文化老師）20260306 的口述歷史，提供本網站「Salimpo 在地應用」段落的所有原始素材。</p>
+    <div class="footer-credits">
+      整理：Salimpo 阿美山海文化實驗小學 ｜ 製作日期：2026-05-05<br>
+      研習資料來源：實驗教育群組會議 bph-tktu-nrj ｜ 13 張投影片去重整理<br>
+      <br>
+      📂 完整 Markdown 筆記（含逐字稿引用）存於 Obsidian 第二大腦：<br>
+      <code style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 12px;">20-課程研發/研習筆記/2026-05-05-陳世聰校長-實驗教育.md</code>
+    </div>
+  </div>
+</footer>
+
+<!-- ======= LIGHTBOX ======= -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img" alt="">
+</div>
+
+<script>
+// Lightbox
+document.querySelectorAll('figure.slide img').forEach(img => {
+  img.addEventListener('click', e => {
+    e.stopPropagation();
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+// Copy to clipboard
+function copyText(btn, msgId) {
+  const text = document.getElementById(msgId).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.innerHTML;
+    btn.innerHTML = '✓ 已複製';
+    btn.style.background = '#06c755';
+    btn.style.color = 'white';
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.style.background = 'white';
+      btn.style.color = '#06c755';
+    }, 2000);
+  });
+}
+</script>
+
+</body>
+</html>
